@@ -15,16 +15,37 @@
 
 .AboutMe .Container .Text h2 {
     font-weight: 900;
-    font-size: 46px;
+    /* font-size: 46px; */
 }
 
 .AboutMe .Container .Photo {
     display: flex;
     width: 50%;
     justify-content: center;
+
+    align-items: center;
 }
 
 .AboutMe .Container .Photo .Me {
-    height: 500px;
+    /* height: 500px; */
     border-radius: 10%;
+    
+    width: 90%;
+    max-width: 500px;
+}
+
+@media (max-width: 500px) {
+
+    .AboutMe .Container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .AboutMe .Container .Text {
+        width: 80%;
+    }
+
+    .AboutMe .Container .Photo {
+        width: 70%;
+    }
 }

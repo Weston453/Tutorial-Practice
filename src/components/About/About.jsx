@@ -5,7 +5,7 @@ import Me from '../img/Me.JPG'
 
 const About = () => {
   return (
-    <div className={classes.AboutMe}>
+    <div className={classes.AboutMe} id="about">
       <PageHeader title={'About Me'}/>
       <div className={classes.Container}>
         <div className={classes.Text}>
@@ -16,7 +16,6 @@ const About = () => {
         </div>
         <div className={classes.Photo}>
           <img className={classes.Me} src={Me} alt="me"></img>
-
         </div>
       </div>
     </div>

@@ -9,10 +9,18 @@
 .Container hr {
     position: absolute;
     left: 0;
-    width: 124px;
+    /* width: 124px; */
     border: 1px solid #8C1CD1;
+
+    width: 12vw;
 }
 
 .conatiner {
     color: white;
+}
+
+@media (max-width: 375px) {
+    .Container hr {
+        display: none;
+    }
 }
